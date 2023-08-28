@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/questionViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#fb6f92"
+            android:textSize="18sp"
+            tools:text="This is the question it will be right there?"></TextView>
+
+        <ImageView
+            android:id="@+id/imageViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Quiz image as a hint"
+            android:scaleType="center"
+            tools:src="@drawable/ronaldo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBarId"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="9"
+                android:minHeight="50dp"
+                android:progress="0"></ProgressBar>
+
+            <TextView
+                android:id="@+id/progressBarTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:text="0/9"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/optionOneId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#2A9D8F"
+            android:textSize="18sp"
+            tools:text="Apple"></TextView>
+
+        <TextView
+            android:id="@+id/optionTwoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#2A9D8F"
+            android:textSize="18sp"
+            tools:text="Apple"></TextView>
+
+        <TextView
+            android:id="@+id/optionThreeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#2A9D8F"
+            android:textSize="18sp"
+            tools:text="Apple"></TextView>
+
+        <TextView
+            android:id="@+id/optionFourId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#2A9D8F"
+            android:textSize="18sp"
+            tools:text="Apple"></TextView>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:text="SUBMIT"
+            android:backgroundTint="#66F9B0"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>
