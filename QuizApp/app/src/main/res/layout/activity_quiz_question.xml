@@ -115,7 +115,7 @@
             android:layout_margin="10dp"
             android:padding="15dp"
             android:text="SUBMIT"
-            android:backgroundTint="#66F9B0"
+            android:backgroundTint="@color/black"
             android:textSize="18sp"
             android:textStyle="bold">
         </Button>
